@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtsDB.Console", "UtsDB.Console\UtsDB.Console.csproj", "{D4C1E6EB-54CF-44A3-A4BA-8DC2D6F0D359}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtsDB.Domain", "UtsDB.Domain\UtsDB.Domain.csproj", "{02B3E0ED-FEBA-44E2-BA58-4F65CEB89705}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtsDB.Application", "UtsDB.Application\UtsDB.Application.csproj", "{A59346E0-6648-4EA3-A650-B5B3BB1DC305}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4C1E6EB-54CF-44A3-A4BA-8DC2D6F0D359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4C1E6EB-54CF-44A3-A4BA-8DC2D6F0D359}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4C1E6EB-54CF-44A3-A4BA-8DC2D6F0D359}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4C1E6EB-54CF-44A3-A4BA-8DC2D6F0D359}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02B3E0ED-FEBA-44E2-BA58-4F65CEB89705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02B3E0ED-FEBA-44E2-BA58-4F65CEB89705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02B3E0ED-FEBA-44E2-BA58-4F65CEB89705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02B3E0ED-FEBA-44E2-BA58-4F65CEB89705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A59346E0-6648-4EA3-A650-B5B3BB1DC305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A59346E0-6648-4EA3-A650-B5B3BB1DC305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A59346E0-6648-4EA3-A650-B5B3BB1DC305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A59346E0-6648-4EA3-A650-B5B3BB1DC305}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "UtsDB.Console/1.0.0": {
+        "dependencies": {
+          "UtsDB.Application": "1.0.0"
+        },
+        "runtime": {
+          "UtsDB.Console.dll": {}
+        }
+      },
+      "UtsDB.Application/1.0.0": {
+        "dependencies": {
+          "UtsDB.Domain": "1.0.0"
+        },
+        "runtime": {
+          "UtsDB.Application.dll": {}
+        }
+      },
+      "UtsDB.Domain/1.0.0": {
+        "runtime": {
+          "UtsDB.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "UtsDB.Console/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UtsDB.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UtsDB.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

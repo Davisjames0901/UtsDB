@@ -1,0 +1,15 @@
+/home/jdavis/RiderProjects/AsperandLabs.Utsd/UtsDB.Application/bin/Debug/net6.0/UtsDB.Application.deps.json
+/home/jdavis/RiderProjects/AsperandLabs.Utsd/UtsDB.Application/bin/Debug/net6.0/UtsDB.Application.dll
+/home/jdavis/RiderProjects/AsperandLabs.Utsd/UtsDB.Application/bin/Debug/net6.0/ref/UtsDB.Application.dll
+/home/jdavis/RiderProjects/AsperandLabs.Utsd/UtsDB.Application/bin/Debug/net6.0/UtsDB.Application.pdb
+/home/jdavis/RiderProjects/AsperandLabs.Utsd/UtsDB.Application/bin/Debug/net6.0/UtsDB.Domain.dll
+/home/jdavis/RiderProjects/AsperandLabs.Utsd/UtsDB.Application/bin/Debug/net6.0/UtsDB.Domain.pdb
+/home/jdavis/RiderProjects/AsperandLabs.Utsd/UtsDB.Application/obj/Debug/net6.0/UtsDB.Application.csproj.AssemblyReference.cache
+/home/jdavis/RiderProjects/AsperandLabs.Utsd/UtsDB.Application/obj/Debug/net6.0/UtsDB.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/jdavis/RiderProjects/AsperandLabs.Utsd/UtsDB.Application/obj/Debug/net6.0/UtsDB.Application.AssemblyInfoInputs.cache
+/home/jdavis/RiderProjects/AsperandLabs.Utsd/UtsDB.Application/obj/Debug/net6.0/UtsDB.Application.AssemblyInfo.cs
+/home/jdavis/RiderProjects/AsperandLabs.Utsd/UtsDB.Application/obj/Debug/net6.0/UtsDB.Application.csproj.CoreCompileInputs.cache
+/home/jdavis/RiderProjects/AsperandLabs.Utsd/UtsDB.Application/obj/Debug/net6.0/UtsDB.Application.csproj.CopyComplete
+/home/jdavis/RiderProjects/AsperandLabs.Utsd/UtsDB.Application/obj/Debug/net6.0/UtsDB.Application.dll
+/home/jdavis/RiderProjects/AsperandLabs.Utsd/UtsDB.Application/obj/Debug/net6.0/ref/UtsDB.Application.dll
+/home/jdavis/RiderProjects/AsperandLabs.Utsd/UtsDB.Application/obj/Debug/net6.0/UtsDB.Application.pdb
