@@ -28,4 +28,10 @@ public class TableColumn
         Width = 8,
         Name = name
     };
+    public static TableColumn DateTime(string name) => new TableColumn
+    {
+        Type = DataTypes.DateTime,
+        Width = 8,
+        Name = name
+    };
 }

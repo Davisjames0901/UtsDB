@@ -1,9 +1,8 @@
 using UtsDB.Domain.Data;
-using UtsDB.Domain.Interfaces;
 
 namespace UtsDB.Application.Engine;
 
-public class TableApi: ITableApi
+public class Shard
 {
     public void Insert(TableMetadata meta, Stream target, ReadOnlySpan<byte> data, DateTime? start = null)
     {

@@ -33,8 +33,9 @@ var json = JsonSerializer.Serialize(data);
 //Database operations
 var request = JsonSerializer.Deserialize<List<JsonElement>>(json);
 
-engine.CreateTable(new TableMetadata(tableName)
+engine.CreateTable(new TableMetadata
 {
+    Name = tableName,
     Frequency = DataFrequency.Daily,
     StartDate = DateTime.Today,
     Columns = new()

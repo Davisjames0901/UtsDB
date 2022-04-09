@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtsDB.Domain", "UtsDB.Domai
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtsDB.Application", "UtsDB.Application\UtsDB.Application.csproj", "{A59346E0-6648-4EA3-A650-B5B3BB1DC305}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtsDB.Infrastructure", "UtsDB.Infrastructure\UtsDB.Infrastructure.csproj", "{0F078FBC-97AA-433D-97A0-6918FC2F800D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{A59346E0-6648-4EA3-A650-B5B3BB1DC305}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A59346E0-6648-4EA3-A650-B5B3BB1DC305}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A59346E0-6648-4EA3-A650-B5B3BB1DC305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F078FBC-97AA-433D-97A0-6918FC2F800D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F078FBC-97AA-433D-97A0-6918FC2F800D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F078FBC-97AA-433D-97A0-6918FC2F800D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F078FBC-97AA-433D-97A0-6918FC2F800D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
