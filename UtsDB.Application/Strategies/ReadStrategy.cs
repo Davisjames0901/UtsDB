@@ -1,15 +1,20 @@
-using System.IO.Pipelines;
+using System.Text.Json;
+using UtsDB.Domain;
 using UtsDB.Domain.Interfaces;
+using UtsDB.Domain.Options;
 
 namespace UtsDB.Application.Strategies;
 
 public class ReadStrategy: IStrategy
 {
-    public ReadStrategy(string table, DateTime start, DateTime end)
+    private readonly ReadOptions _options;
+
+    public ReadStrategy(ReadOptions options)
     {
-        
+        _options = options;
     }
-    public Task Execute(PipeReader reader, PipeWriter writer)
+
+    public Task<List<JsonElement>> Execute(List<JsonElement> data)
     {
         throw new NotImplementedException();
     }

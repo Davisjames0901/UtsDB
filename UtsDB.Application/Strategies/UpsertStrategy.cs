@@ -1,21 +1,20 @@
-using System.IO.Pipelines;
+using System.Text.Json;
+using UtsDB.Domain;
 using UtsDB.Domain.Interfaces;
+using UtsDB.Domain.Options;
 
 namespace UtsDB.Application.Strategies;
 
 public class UpsertStrategy : IStrategy
 {
-    private readonly DateTime _startDate;
-    private readonly DateTime _endDate;
-    private readonly string _tableName;
+    private readonly WriteOptions _options;
 
-    public UpsertStrategy(string tableName, DateTime startDate, DateTime endDate)
+    public UpsertStrategy(WriteOptions options)
     {
-        _tableName = tableName;
-        _startDate = startDate;
-        _endDate = endDate;
+        _options = options;
     }
-    public Task Execute(PipeReader reader, PipeWriter writer)
+
+    public Task<List<JsonElement>> Execute(List<JsonElement> data)
     {
         throw new NotImplementedException();
     }

@@ -1,6 +1,6 @@
 using UtsDB.Domain.Data;
 
-namespace UtsDB.Application;
+namespace UtsDB.Domain;
 
 public static class DateTimeExtensions
 {
@@ -14,4 +14,6 @@ public static class DateTimeExtensions
     {
         return AdvanceByPeriod(datetime, frequency, numberOfPeriods * -1);
     }
+    
+    public static bool DateFallsInRange(this DateTime target, DateTime start, DateTime end) => target >= start && target <= end;
 }

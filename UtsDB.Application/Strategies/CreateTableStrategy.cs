@@ -1,13 +1,30 @@
-using System.IO.Pipelines;
+using System.Text.Json;
+using UtsDB.Domain.Data;
 using UtsDB.Domain.Interfaces;
+using UtsDB.Domain.Options;
+using UtsDB.Domain.Services;
 
 namespace UtsDB.Application.Strategies;
 
 public class CreateTableStrategy: IStrategy
 {
-    
-    public Task Execute(PipeReader reader, PipeWriter writer)
+    private readonly CreateTableOptions _options;
+    private readonly IMetadataService _metadataService;
+
+    public CreateTableStrategy(CreateTableOptions options, IMetadataService metadataService)
     {
-        throw new NotImplementedException();
+        _options = options;
+        _metadataService = metadataService;
+    }
+    public async Task<List<JsonElement>> Execute(List<JsonElement> data)
+    {
+        var tableMetadata = new TableMetadata
+        {
+            Columns = _options.Columns,
+            Frequency = _options.DataFrequency,
+            Name = _options.TableName
+        };
+        await _metadataService.CreateTableMetadata(tableMetadata);
+        return null;
     }
 }

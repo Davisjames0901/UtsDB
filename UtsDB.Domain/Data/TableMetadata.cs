@@ -17,8 +17,11 @@ public class TableMetadata
     public List<TableColumn> Columns { get; init; }
     [JsonIgnore]
     public List<ShardMetadata> Shards { get; set; }
-    public DateTime StartDate => Shards.Min(s=> s.Start);
-    public DateTime EndDate => Shards.Max(s => s.End);
+    [JsonIgnore]
+    public DateTime? StartDate => Shards?.Min(s=> s.Start);
+    [JsonIgnore]
+    public DateTime? EndDate => Shards?.Max(s => s.End);
     public int ShardSize => RowsPerShard * RowWidth;
     public int RowWidth => Columns.Sum(x => x.Width);
+
 }

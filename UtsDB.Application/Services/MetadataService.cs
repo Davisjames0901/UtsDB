@@ -1,4 +1,5 @@
 using System.Text.Json;
+using UtsDB.Domain;
 using UtsDB.Domain.Config;
 using UtsDB.Domain.Data;
 using UtsDB.Domain.Services;
@@ -33,13 +34,14 @@ public class MetadataService : IMetadataService
         }
     }
 
-    public void CreateTableMetadata(TableMetadata metadata)
+    public async Task CreateTableMetadata(TableMetadata metadata)
     {
         var path = _config.TableMetadataPath(metadata.Name);
         if (!File.Exists(path))
         {
+            Directory.CreateDirectory(Path.GetDirectoryName(path));
             var json = JsonSerializer.Serialize(metadata);
-            File.WriteAllText(path, json);
+            await File.WriteAllTextAsync(path, json);
         }
     }
 
@@ -67,7 +69,7 @@ public class MetadataService : IMetadataService
         
         if (direction == GrowthDirection.Up)
         {
-            var lastEndDate = tableMetadata.Shards.Max(s => s.End);
+            var lastEndDate = tableMetadata.Shards.Last().End;
             shard.Start = lastEndDate.AdvanceByPeriod(tableMetadata.Frequency);
             shard.End = shard.Start.AdvanceByPeriod(tableMetadata.Frequency, tableMetadata.ShardSize);
         }

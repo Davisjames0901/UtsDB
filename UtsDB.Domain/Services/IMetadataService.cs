@@ -4,7 +4,7 @@ namespace UtsDB.Domain.Services;
 
 public interface IMetadataService
 {
-    void CreateTableMetadata(TableMetadata metadata);
+    Task CreateTableMetadata(TableMetadata metadata);
     TableMetadata? GetTableMetadata(string table);
     void DeleteTableMetadata(string table);
     ShardMetadata? CreateShardMetadata(string table, GrowthDirection direction);
